@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmGuard V2 - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>FarmGuard V2 Dashboard</h1>
+    </header>
+    
+    <div class="container">
+        <div id="welcomeMessage" data-message="{{ message if message else '' }}">
+            {% if message %}
+                <p><em>{{ message }}</em></p>
+            {% endif %}
+        </div>
+
+        <h2>Recent Guardian Events</h2>
+        <button id="refreshButton">Refresh Events</button>
+        <div id="eventLogTableContainer">
+            <table class="event-log-table">
+                <thead>
+                    <tr>
+                        <th>Event ID</th>
+                        <th>Timestamp</th>
+                        <th>Tag ID</th>
+                        <th>Video Audit</th>
+                    </tr>
+                </thead>
+                <tbody id="eventLogBody">
+                    <!-- Event rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TODO: Add sections for Asset Management, SubUnit Status, FSMA Reports etc. -->
+        <h2>Asset Management</h2>
+        <p>(Placeholder for asset list and registration)</p>
+
+        <h2>FSMA Compliance</h2>
+        <p>(Placeholder for FSMA report generation tools)</p>
+    </div>
+
+    <footer>
+        <p>© {% now 'Y' %} FarmGuard Project</p>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

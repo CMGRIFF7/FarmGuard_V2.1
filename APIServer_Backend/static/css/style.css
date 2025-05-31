@@ -1,0 +1,14 @@
+body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+header { background-color: #3a5a40; color: white; padding: 1em 0; text-align: center; }
+main { padding: 20px; max-width: 1000px; margin: 20px auto; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background-color: #588157; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+button { padding: 10px 15px; background-color: #3a5a40; color: white; border: none; cursor: pointer; border-radius: 4px; margin-bottom: 15px; }
+button:hover { background-color: #588157; }
+footer { text-align: center; padding: 1em 0; background-color: #333; color: white; margin-top: 30px; /* Removed fixed position */ }
+a { color: #3a5a40; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { padding: 1em; }
+.event-log-table th, .event-log-table td { font-size: 0.9em; }

@@ -1,0 +1,8 @@
+Flask
+SQLAlchemy
+Flask-SQLAlchemy  # Manages SQLAlchemy session within Flask context
+Flask-Migrate     # For Alembic database migrations with Flask
+psycopg2-binary   # PostgreSQL adapter for Python
+python-dotenv     # For managing environment variables (good practice)
+requests          # If your server needs to call other APIs
+# gunicorn        # For production deployment (later)

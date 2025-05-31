@@ -1,0 +1,5 @@
+opencv-python # Still useful for potential image processing, even if picamera2 handles capture
+requests
+mercurial-api # For ThingMagic RFID Readers
+picamera2     # For Raspberry Pi Camera Module 3
+# pyserial    # mercurial-api handles serial communication internally for USB Pro
